@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>App FTMF - Blood Flow vs Stenosis</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="container">
+		<h2>Sa testam diferenta de debit si presiunea necesara mentinerii debitului in cazul unei stenoze:</h2><br>
+		<p>Introduceti debitul initial, presiunea si procentul in care stenoza blocheaza artera:</p>
+
+		<form id="stenosis-data">
+			<input type="text" name="debit" id="debit" placeholder="Debit [ml/min]: " />
+			<input type="text" name="presiune" id="presiune" placeholder="Presiune [mmHg]: " />
+			<input type="text" name="stenosis-percentage" id="stenosis-percentage" placeholder="Procent stenoza (%): " />
+
+			<button type="button" id="send-btn">Trimite</button>
+		</form>
+
+		<br><br>
+		<p>*Se accepta doar valori numerice, fara unitati de masura! Virgula va fi inlocuita de ".</p>
+
+		<div id="results">
+			<h3>De-a lungul suprafetei pe care artera este blocata, debitul va atinge valoarea:</h3><br>
+			<div class="value" id="debit-output">46 mL/min</div><br><br>
+			<h3>Pentru a se pastra debitul setat, presiunea necesara ar fi:</h3><br>
+			<div class="value" id="presiune-output">150 mmHg</div>
+		</div>
+		<br><h4>Stenoza se va considera liniara de-a lungul arterei.</h4>
+	</div>
+	<footer>
+		<p>Created By Iulia Gheorghe - Started: January 11th, 2022 - 2.17 AM</p><br>
+		<p>Will be updated to show results for different units.</p>
+	</footer>
+
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
