@@ -40,7 +40,7 @@ function giveResult(){
 	debitOut.innerText = debitResult + " mL/min";
 	presiuneOut.innerText = presiuneResult + " mmHg";
 
-	window.location.href = "index.html#results";
+	// window.location.href = "index.html#results";
 
 }
 
